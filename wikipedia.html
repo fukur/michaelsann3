@@ -33,13 +33,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="http://www.codecademy.com/rollcage92">Mein Codecademy Profil</a></li>
        <li><a href="wikipedia.html">Wikipedia-Suche</a></li>
-   
       </ul>
-
       <ul class="nav navbar-nav navbar-right">
         <li><a href="impressum.html">Impressum</a></li>
       </ul>
@@ -48,17 +45,44 @@
 </nav>
 
 
+<div class="container">
+	
+	<div class="page-header text-center">
+	<h1>Web-Suche</h1>
+	</div>
+	
+	<div class="jumbotron">
+	
+		<h2>Wikipedia Suche</h2>
+		<br />
+		<form action="javascript:wikiSuche('art')" class="form-horizontal" role="form">
+		        <div class="form-group">
+		        	<label for="wikiSuchBegriff">Suchbegriff:</label>
+		        	<div class="row">
+					  <div class="col-md-6">
+					  	<input id="wikiSuchBegriff" class="form-control input-lg" type="text" placeholder="Suchbegriff">
+					  </div>
+					  <div class="col-md-4">
+					  	<button type="submit" class="btn btn-primary btn-lg">Artikel</button>
+					  	<a class="btn btn-default btn-lg" role="button" href="javascript:wikiSuche('vollt')">Volltext</a>
+					  	<!-- Andere alte Buttons 
+					  	<button type="button" class="btn btn-default btn-lg" href="javascript:wikiSuche('vollt')">Volltext</button>
+					  	<a class="btn btn-primary btn-lg" role="button" href="javascript:wikiSuche('art')">Artikel</a>
+					  	-->
+					  
+					  </div>
+					</div>
+					<br /><br />
+					<span>Barrierefreies Surfen:</span>
+					<br />
+					<a href="http://wave.webaim.org/report#/kevinweigand5.cloudcontrolled.com/suche.html" target="_blank" title="WAVE Tool Check">
+  						<img height="32" width="88" src="http://www.w3.org/WAI/wcag2AAA" alt="Level Triple-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
+  					</a>
+		
+		        </div>
+		</form>
+	
+	</div>
+</div>
 
-    <div class="container"align="center">
-      <div class="jumbotron">
-        <h1>Erste Website</h1>      
-<img src="doge.jpg"/> 
-      </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  </body>
 </html>
-
-

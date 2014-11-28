@@ -16,33 +16,13 @@
     <script src="js/bootstrap.min.js"></script>
   </head>
 
-  <body>
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Meine Seite</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="http://www.codecademy.com/rollcage92">Mein Codecademy Profil</a></li>
-       <li><a href="wikipedia.html">Wikipedia-Suche</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="impressum.html">Impressum</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+  <body>  
+  <ul class="nav nav-pills nav-stacked">
+  <li role="presentation" ><a href="index.html">Home</a></li>
+  <li role="presentation"class="active"><a href="wikipedia.html">Wiki-Suche</a></li>
+  <li role="presentation"><a href="http://www.codecademy.com/rollcage92">Codecademy-Profil</a></li>
+  <li role="presentation"><a href="impressum.html">Impressum</a></li>
+</ul>
 
 
 <div class="container">
@@ -51,7 +31,7 @@
 	<h1>Web-Suche</h1>
 	</div>
 	
-	<div class="jumbotron">
+	
 	
 		<h2>Wikipedia Suche</h2>
 		<br />
@@ -65,24 +45,21 @@
 					  <div class="col-md-4">
 					  	<button type="submit" class="btn btn-primary btn-lg">Artikel</button>
 					  	<a class="btn btn-default btn-lg" role="button" href="javascript:wikiSuche('vollt')">Volltext</a>
-					  	<!-- Andere alte Buttons 
-					  	<button type="button" class="btn btn-default btn-lg" href="javascript:wikiSuche('vollt')">Volltext</button>
-					  	<a class="btn btn-primary btn-lg" role="button" href="javascript:wikiSuche('art')">Artikel</a>
-					  	-->
+
 					  
 					  </div>
 					</div>
 					<br /><br />
 					<span>Barrierefreies Surfen:</span>
 					<br />
-					<a href="http://wave.webaim.org/report#/kevinweigand5.cloudcontrolled.com/suche.html" target="_blank" title="WAVE Tool Check">
+					<a href="http://wave.webaim.org/report#/michaelsann3.cloudcontrolled.com%2F" target="_blank" title="WAVE Tool Check">
   						<img height="32" width="88" src="http://www.w3.org/WAI/wcag2AAA" alt="Level Triple-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
   					</a>
 		
 		        </div>
 		</form>
 	
-	</div>
+
 </div>
 
 </html>

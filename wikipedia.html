@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meine Seite</title>
+    <title>Erste Webseite</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,6 +15,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+		
+		// Wikipedia Suche - Öffnet die Wikipedia in neuem Tab
+		// @param mode - Artikelsuche: 'art'; Volltextsuche: 'vollt';
+		function wikiSuche (mode) {
+			
+			suche = document.getElementById('wikiSuchBegriff').value;
+			
+			if(mode == 'art') {
+				window.open("http://de.wikipedia.org/wiki/"+suche , '_blank');
+			}
+			else if(mode == 'vollt') {
+				window.open("http://de.wikipedia.org/wiki/Spezial:Suche?fulltext=Volltextsuche&search="+suche , '_blank');
+			}
+			else {
+				alert('Interner Fehler');
+			}
+			
+		}
+</script>
   </head>
 
   <body>  

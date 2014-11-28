@@ -22,18 +22,14 @@
 		// @param mode - Artikelsuche: 'art'; Volltextsuche: 'vollt';
 		function wikiSuche (mode) {
 			
-			suche = document.getElementById('wikiSuchBegriff').value;
+			suche = document.getElementById('suchBegriff').value;
 			
-			if(mode == 'art') {
+			if(mode == 'artikel') {
 				window.open("http://de.wikipedia.org/wiki/"+suche , '_blank');
 			}
-			else if(mode == 'vollt') {
+			else (mode == 'volltext') {
 				window.open("http://de.wikipedia.org/wiki/Spezial:Suche?fulltext=Volltextsuche&search="+suche , '_blank');
 			}
-			else {
-				alert('Interner Fehler');
-			}
-			
 		}
 </script>
   </head>
@@ -48,36 +44,28 @@
 
 
 <div class="container">
-	
-	<div class="page-header text-center">
-	<h1>Web-Suche</h1>
-	</div>
-	
-	
-	
+
 		<h2>Wikipedia Suche</h2>
 		<br />
-		<form action="javascript:wikiSuche('art')" class="form-horizontal" role="form">
+		<form action="javascript:wikiSuche('artikel')" class="form-horizontal" role="form">
 		        <div class="form-group">
-		        	<label for="wikiSuchBegriff">Suchbegriff:</label>
+		        	<label for="suchBegriff">Suchbegriff:
 		        	<div class="row">
 					  <div class="col-md-6">
-					  	<input id="wikiSuchBegriff" class="form-control input-lg" type="text" placeholder="Suchbegriff">
+					  	<input id="suchBegriff" class="form-control input-lg" type="text" placeholder="Suchbegriff">
 					  </div>
 					  <div class="col-md-4">
-					  	<button type="submit" class="btn btn-primary btn-lg">Artikel</button>
-					  	<a class="btn btn-default btn-lg" role="button" href="javascript:wikiSuche('vollt')">Volltext</a>
+					  	<button type="submit" class="btn btn-primary btn-lg"> Artikel</button>
+					  	<a class="btn btn-default btn-lg" role="button" href="javascript:wikiSuche('volltext')">Volltext</a>
 
 					  
 					  </div>
 					</div>
 					<br /><br />
-					<span>Barrierefreies Surfen:</span>
-					<br />
 					<a href="http://wave.webaim.org/report#/michaelsann3.cloudcontrolled.com%2F" target="_blank" title="WAVE Tool Check">
-  						<img height="32" width="88" src="http://www.w3.org/WAI/wcag2AAA" alt="Level Triple-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
+  						<img height="32" width="88" src="http://www.w3.org/WAI/wcag2AAA" alt="WAVE Web Accessibility">
   					</a>
-		
+		</label>
 		        </div>
 		</form>
 	
